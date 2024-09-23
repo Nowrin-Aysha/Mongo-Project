@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+  margin: 0;
+  background-color: #e9ecef; /* Light background for contrast */
+}
+
+.App {
+  max-width: 360px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff; /* White background for the main container */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #343a40; /* Dark text color */
+  font-weight: 600; /* Bold weight */
+}
+
+.logout-button {
+  background-color: #dc3545; /* Bootstrap Danger Red */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa; /* Light gray background for the form */
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Input and Label Styles */
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: #495057; /* Medium gray for labels */
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+/* Button Styles */
+button {
+  padding: 0.5rem;
+  background-color: #6a114c; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #430937; /* Darker blue on hover */
+}
+
+.add-employee-button {
+  margin-top: 1rem;
+  background-color: #5b0649; /* Green background for add employee */
+}
+
+.add-employee-button:hover {
+  background-color: #6c0750; /* Darker green on hover */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+th {
+  background-color: #2e0520; /* Blue background for header */
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Light gray on row hover */
+}
+
+/* Button Styles for Edit and Delete */
+button.edit-button {
+  margin-right: 10px; /* Space between Edit and Delete buttons */
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .App {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.5rem 0;
+  }
+
+  input {
+    font-size: 14px;
+  }
+}
+
+.error {
+  color: #de0b0bdb; 
+  font-size: 0.875em; 
+  margin-top: 0.5rem;
+}
